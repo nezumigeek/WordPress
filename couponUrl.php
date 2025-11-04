@@ -1,4 +1,4 @@
-// Hook into the "init" action
+// Hooks into the "init" action
 add_action('init', 'woosuite_auto_apply_coupon_code_from_url');
 
 function woosuite_auto_apply_coupon_code_from_url() {
