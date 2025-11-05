@@ -46,6 +46,25 @@ That’s it. You’ve disabled automatic updates in WordPress.
 Note: To Disable a portion of the Automatic Updates snippet
 If you don’t want to use one of these filters, simply edit the code to add an // at the beginning of the filter line. For example, adding // to the core auto-updates filter line will prevent it from executing. So, you’ll still get automatic updates for the core, but not for plugins and themes.
 
+### Install method for holiday.html and holiday.css (Icegram Engage)
+Icegram Engage » Add New Campaign from the WordPress admin dashboard.
+
+Click “Add New Campaign” and enter a descriptive title (e.g., “Holiday Promo Popup”).
+
+In the Message Body section, pasted the contents of holiday.html.
+
+Scrolled down to the Custom CSS field and paste the contents of holiday.css.
+
+Reviewed campaign settings:
+Set display rules (e.g., show sitewide, after delay, always, All Devices, All users, and Current session for campaign).
+
+Clicked “Update” to save and activate the campaign.
+
+Note: If the background image does not appear or scales incorrectly, verify that:
+The image URL in holiday.css is correct and publicly accessible.
+The CSS includes background-size: cover or contain as needed.
+The popup container has overflow: hidden and position: relative to support layering and rounded corners.
+
 #### wholesaleRemoveSub.php
 This code ensures that wholesale products do not show subscription pricing or options on their product pages.
 
@@ -147,6 +166,7 @@ Terminates script execution immediately, preventing further processing of the re
 
 | Date       | Version      | Changes                                                                                                    |
 |------------|--------------|------------------------------------------------------------------------------------------------------------|
+| 11/5/25   | V0.0.3      | - Added holiday popup campaign via Icegram Engage plugin.<br> - Created and embedded custom HTML (holiday.html) and CSS (holiday.css) into campaign message and styling fields.<br> - Configured popup display settings and verified responsive behavior across screen sizes.<br> - Applied green-themed typography, black CTA button, white background, and rounded corners with black border.<br> - Adjusted background image layering to preserve visibility and positioning at bottom-left.<br> - Updated README.md with installation instructions for Icegram Engage popup integration.                                 |
 | 11/4/25  | V0.0.2  | - README.md: Improved formatting and clarified installation steps.<br> - couponUrl.php: Documented default coupon logic.<br> - wholesaleRemoveSub.php: Added initial code and explanation for WooCommerce hook usage. |
 | 11/3/25   | V0.0.1      | - README.md - Added Readme <br> - couponUrl.php - Added initial Code. <br> security.php - Added initial code. <br> updateDisable.php - Added initial code.                                  |
 

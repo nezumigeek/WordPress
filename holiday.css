@@ -1,0 +1,129 @@
+#ig_this_message {
+    border: 2px solid #000000;     /* Black border */
+    border-radius: 12px;           /* Rounded corners */
+    overflow: hidden;              /* Ensures rounded corners apply to child elements like background image */
+}
+#ig_this_message .ig_message {
+    padding: 9em 2em 4em;
+    text-align: left;
+}
+
+#ig_this_message .ig_bg_overlay {
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: url(https://mytosynthdev.wpenginepowered.com/wp-content/uploads/2025/11/edit2holidaysvg.png);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#ig_this_message .ig_second_bg {
+    font-size: 10em;
+    position: absolute;
+    top: .5em;
+    left: .1em;
+    width: 100%;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.03);
+    font-weight: bold;
+}
+
+#ig_this_message .ig_text_container {
+    font-size: 1.5em;
+    line-height: 1.2em;
+    font-family: monospace;
+    float: right;
+    color: #4e7644;
+}
+
+#ig_this_message .ig_close {
+    background-image: url(https://www.icegram.com/gallery/wp-content/uploads/2017/07/sprite_close_02_black_48.png);
+    background-position: -248px center;
+    background-color: transparent;
+    opacity: 1;
+    height: 30px;
+    width: 30px;
+    top: 1em;
+    right: 1em;
+}
+
+#ig_this_message .ig_sub_heading,
+#ig_this_message .ig_last_heading {
+    font-size: 0.7em;
+    line-height: 1.2em;
+    color: #4e7644;
+}
+
+#ig_this_message .ig_heading {
+    font-size: 2em;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #4e7644;
+    line-height: 1em;
+}
+
+#ig_this_message .ig_cta {
+    font-size: .55em;
+    padding: .8em 1em;
+    letter-spacing: 2px;
+    box-shadow: none;
+    display: inline-block;
+    margin-top: 1em;
+    font-weight: bold;
+    background-color: #000000;
+    color: #4e7644;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 1440px) {
+    #ig_this_message {
+        max-width: 700px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #ig_this_message {
+        width: 65%;
+    }
+    #ig_this_message .ig_second_bg {
+        font-size: 9.5em;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #ig_this_message {
+        width: 75%;
+    }
+    #ig_this_message .ig_second_bg {
+        font-size: 8.5em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #ig_this_message .ig_second_bg {
+        font-size: 7.3em;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    #ig_this_message {
+        width: 90%;
+    }
+    #ig_this_message .ig_message {
+        padding-top: 10em;
+    }
+    #ig_this_message .ig_second_bg {
+        font-size: 7.5em;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    #ig_this_message .ig_message {
+        padding-top: 11em;
+    }
+    #ig_this_message .ig_second_bg {
+        font-size: 5.5em;
+    }
+}
